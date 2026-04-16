@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #fffaf3;
+  --ink: #25142f;
+  --plum: #7437ad;
+  --leaf: #476a36;
+  --tea: #4b2e16;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(71, 106, 54, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(116, 55, 173, 0.04) 1px, transparent 1px),
+    #fffaf3;
+  background-size: 42px 42px;
+  color: var(--ink);
+  font-family: Satoshi, "Avenir Next", "Trebuchet MS", sans-serif;
+}
+
+::selection {
+  background: #7437ad;
+  color: #fffaf3;
+}
+
+@layer base {
+  .font-display {
+    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm font-semibold uppercase tracking-[0.18em] text-plum-900 transition hover:text-plum-600;
+  }
+
+  .mobile-link {
+    @apply px-2 py-3 font-semibold text-plum-900 transition hover:bg-plum-50;
+  }
+
+  .footer-title {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-saffron;
+  }
+
+  .section-pad {
+    @apply px-5 py-20 md:py-28;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.26em] text-plum-700;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-plum-800 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-plum-900;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-plum-200 bg-white/70 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-plum-900 transition hover:-translate-y-0.5 hover:border-plum-500 hover:bg-white;
+  }
+
+  .product-card {
+    @apply border border-plum-100 bg-cream/[0.82] p-6 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-glow md:p-8;
+  }
+}
+
+.hero-scene {
+  min-height: min(760px, calc(100vh - 24px));
+  background:
+    linear-gradient(90deg, rgba(37, 20, 47, 0.48), rgba(37, 20, 47, 0.18) 52%, rgba(255, 250, 243, 0.16)),
+    url("/images/business-card-02.png") center / cover no-repeat;
+}
+
+.leaf-frame {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.65), transparent 34%),
+    linear-gradient(135deg, rgba(243, 233, 255, 0.86), rgba(255, 250, 243, 0.95));
+}
+
+.product-pack {
+  position: relative;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.product-pack::before {
+  position: absolute;
+  inset: 28px 28%;
+  content: "";
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.12)),
+    var(--accent);
+  box-shadow: 0 26px 60px rgba(37, 20, 47, 0.2);
+  transform: perspective(520px) rotateY(-10deg);
+}
+
+.product-pack::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(115deg, transparent 0 34%, rgba(255, 255, 255, 0.45) 35% 38%, transparent 39%),
+    radial-gradient(circle at 52% 24%, rgba(255, 255, 255, 0.6), transparent 12%);
+  opacity: 0.8;
+}
+
+.product-pack span {
+  z-index: 1;
+  max-width: 7rem;
+  color: white;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  line-height: 0.92;
+  text-align: center;
+}
+
+.marquee {
+  animation: marquee 26s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-scene {
+    min-height: 720px;
+    background-position: 48% center;
+  }
+}

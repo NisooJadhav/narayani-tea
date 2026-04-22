@@ -10,6 +10,7 @@ type ProductCardProps = {
     tone: string;
     ingredients: string[];
     accent: string;
+    image?: string;
   };
   index?: number;
 };

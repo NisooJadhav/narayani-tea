@@ -19,49 +19,56 @@ export const flavours = [
     name: "Elaichi Jaggery Tea",
     tone: "Cardamom warm",
     ingredients: ["Jaggery Powder", "Milk Solids", "Instant Tea Powder", "Elaichi Powder"],
-    accent: "#8d54c5"
+    accent: "#8d54c5",
+    image: "/images/products/elaichi-jaggery-tea.png"
   },
   {
     slug: "coffee-jaggery-premix",
     name: "Coffee Jaggery Premix",
     tone: "Cafe smooth",
     ingredients: ["Jaggery Powder", "Milk Solids", "Coffee Powder"],
-    accent: "#6f3f21"
+    accent: "#6f3f21",
+    image: "/images/products/coffee-jaggery-premix.png"
   },
   {
     slug: "kadak-dust",
     name: "Kadak Dust",
     tone: "Bold Assam",
     ingredients: ["Jaggery Powder", "Milk Solids", "Assam Tea Powder"],
-    accent: "#4b2e16"
+    accent: "#4b2e16",
+    image: "/images/products/kadak-dust.png"
   },
   {
     slug: "basundi-jaggery-tea",
     name: "Basundi Jaggery Tea",
     tone: "Dessert rich",
     ingredients: ["Jaggery Powder", "Instant Tea Powder", "Condensed Milk Powder"],
-    accent: "#d9a441"
+    accent: "#d9a441",
+    image: "/images/products/basundi-jaggery-tea.png"
   },
   {
     slug: "family-blend",
     name: "Family Blend",
     tone: "Everyday classic",
     ingredients: ["Assam Tea Powder", "Multiple Grade Tea Blend"],
-    accent: "#476a36"
+    accent: "#476a36",
+    image: "/images/products/family-blend.png"
   },
   {
     slug: "masala-jaggery-tea",
     name: "Masala Jaggery Tea",
     tone: "Spiced comfort",
     ingredients: ["Jaggery Powder", "Milk Solids", "Instant Tea Powder", "Natural Flavours"],
-    accent: "#9a4e25"
+    accent: "#9a4e25",
+    image: "/images/products/masala-jaggery-tea.png"
   },
   {
     slug: "ginger-jaggery-tea",
     name: "Ginger Jaggery Tea",
     tone: "Ginger lift",
     ingredients: ["Jaggery Powder", "Milk Solids", "Instant Tea Powder", "Ginger Powder"],
-    accent: "#c6832e"
+    accent: "#c6832e",
+    image: "/images/products/ginger-jaggery-tea.png"
   }
 ];
 

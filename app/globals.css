@@ -8,6 +8,7 @@
   --plum: #7437ad;
   --leaf: #476a36;
   --tea: #4b2e16;
+  --saffron: #f4a261;
 }
 
 * {
@@ -70,7 +71,15 @@ body {
   }
 
   .product-card {
-    @apply border border-plum-100 bg-cream/[0.82] p-6 shadow-soft backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-glow md:p-8;
+    @apply border border-plum-100 bg-white/70 p-6 shadow-soft backdrop-blur-md transition duration-500 hover:-translate-y-2 hover:shadow-glow md:p-8;
+  }
+
+  .glass-card {
+    @apply border border-white/20 bg-white/10 shadow-lg backdrop-blur-lg;
+  }
+
+  .glass-dark {
+    @apply border border-plum-500/20 bg-plum-900/40 shadow-xl backdrop-blur-xl;
   }
 }
 
@@ -135,6 +144,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     default: "Narayani Tea | Premium Tea Powder & Jaggery Premixes",
     template: "%s | Narayani Tea"
   },
+  icons: {
+    icon: "/favicon.png",
+  },
   description: site.description,
   keywords: [
     "Narayani Tea",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, CupSoda, Leaf, PackageCheck, Sparkles, Clock, ShieldCheck, Heart, Star, BookOpen, Utensils } from "lucide-react";
+import { ArrowRight, Leaf, Clock, ShieldCheck, Heart, Star } from "lucide-react";
 import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
 import { flavours, site } from "@/lib/site";
@@ -75,7 +75,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-plum-950/60 p-8 backdrop-blur-md">
-                    <p className="font-display text-3xl text-white italic">"A legacy of warmth in every sip."</p>
+                    <p className="font-display text-3xl text-white italic">&quot;A legacy of warmth in every sip.&quot;</p>
                 </div>
               </div>
             </Reveal>
@@ -89,7 +89,7 @@ export default function HomePage() {
                    Narayani Tea was born from a simple promise: to bring back the authentic, health-concious tea culture of India. From the misty gardens of Assam to your kitchen, we ensure every leaf is chosen with care.
                 </p>
                 <p className="text-lg leading-relaxed text-ink/70">
-                  Our Jaggery-based premixes are a tribute to traditional wisdom, combining the convenience of modern life with the wholesome goodness of natural 'Gud'. Consistency is our signature; quality is our tradition.
+                  Our Jaggery-based premixes are a tribute to traditional wisdom, combining the convenience of modern life with the wholesome goodness of natural &apos;Gud&apos;. Consistency is our signature; quality is our tradition.
                 </p>
                 <div className="pt-6">
                   <Link href="/about" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-plum-800 transition hover:text-plum-600">
@@ -174,7 +174,7 @@ export default function HomePage() {
                 The Narayani <br /> <span className="text-saffron italic">Standard.</span>
               </h2>
               <p className="mt-8 text-lg leading-relaxed text-plum-100/70">
-                Consistency is hard; quality is harder. We've spent years perfecting our blends so that every cup feels exactly like the first one you loved.
+                Consistency is hard; quality is harder. We&apos;ve spent years perfecting our blends so that every cup feels exactly like the first one you loved.
               </p>
             </Reveal>
             <div className="grid gap-8 sm:grid-cols-2">

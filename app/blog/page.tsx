@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calendar, User, Tag } from "lucide-react";
+import { ArrowRight, Calendar, User } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { posts } from "@/lib/blog";
 

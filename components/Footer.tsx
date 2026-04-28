@@ -56,7 +56,7 @@ export function Footer() {
                 <address className="not-italic leading-6">
                   Narayani Tea HQ,<br />
                   Manufacturer & Seller,<br />
-                  Assam / Maharashtra, India
+                  Pune, Maharashtra, India
                 </address>
               </div>
               <a href={`mailto:${site.email}`} className="flex items-center gap-4 transition hover:text-white">
